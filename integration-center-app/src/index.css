@@ -1,12 +1,74 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  /* Brand Colors - Primary (used for buttons, links, active states) */
+  --color-brand-primary: #111827;
+  --color-brand-primary-hover: #3a4580;
+
+  /* Navigation Colors */
+  --color-nav-bg: #1b212b;
+  --color-nav-item-active: #68ab0b;
+  --color-nav-item-inactive: #ffffff;
+  --color-nav-item-active-text: #ffffff;
+  --color-nav-item-inactive-icon: #68ab0b;
+  --color-nav-heading: #757575;
+
+  /* Neutral Colors (text, backgrounds, borders) */
+  --color-neutral-50: #f7f7f7;
+  --color-neutral-100: #f0f0f0;
+  --color-neutral-200: #efefef;
+  --color-neutral-300: #e0e0e0;
+  --color-neutral-400: #b0b0b0;
+  --color-neutral-500: #757575;
+  --color-neutral-600: #666666;
+  --color-neutral-700: #333333;
+
+  /* Status Colors */
+  --color-status-utility-bg: #f0fdfa;
+  --color-status-utility-text: #2aa196;
+  --color-status-utility-border: #d0f8f2;
+  --color-status-carbon-bg: #fffbeb;
+  --color-status-carbon-text: #dd8722;
+  --color-status-carbon-border: #feedb7;
+  --color-status-delete: #ef4444;
+  --color-status-delete-hover: #c62828;
+  --color-status-warning: #fbbe20;
+  --color-status-warning-hover: #c79100;
+
+  /* Other Colors */
+  --color-avatar-bg: #3b82f6;
+  --color-link-text: #45aec3;
+  --color-link-underline: #f1f9fb;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    font-family:
+      "Roboto",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      "Oxygen",
+      "Ubuntu",
+      "Cantarell",
+      "Fira Sans",
+      "Droid Sans",
+      "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }

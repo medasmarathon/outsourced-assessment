@@ -1,10 +1,8 @@
 export interface Service {
   id: string;
   name: string;
-  icon: string;
   description: string;
-  iconColor: string;
-  iconBg: string;
+  logo: string;
 }
 
 export interface Connection {
@@ -20,5 +18,10 @@ export interface Connection {
 
 export interface Badge {
   label: string;
-  color: 'orange' | 'green' | 'gray';
+  color: "orange" | "green" | "gray";
+}
+
+export interface Tenant {
+  id: string;
+  name: string;
 }
